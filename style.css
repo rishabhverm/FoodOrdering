@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+:root {
+    --box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, .1);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+
+}
+
+header .logo i {
+    color: green;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: 0.5rem 1.5rem;
+    color: black;
+    font-weight: bolder;
+
+}
+
+header .navbar a:hover {
+    color: white;
+    background: green;
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 2.7rem;
+    color: black;
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: white;
+    background: green;
+    transform: rotate(360deg);
+}
+
+header .icons #bars {
+    display: none;
+}
+
+#search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+section {
+    padding: 2rem 9;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-top: 9rem;
+
+}
+
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+
+}
+
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+    width: 70%;
+    width: 70%;
+    border-radius: 35px;
+    border: 0.5px solid green;
+    cursor: grabbing;
+}
+
+.span {
+
+    margin-inline-start: 170px;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home .home-slider .slide .content h3 {
+
+    margin-inline-start: 200px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-size: xx-large;
+
+}
+
+.para {
+    margin-left: 193px;
+    color: gray;
+    font-size: 20px;
+    padding: 7px;
+}
+
+.btn {
+    background: #053b02bf;
+    padding: 10px;
+    margin-top: 3px;
+    margin-inline-start: 198px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 27px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: rgb(1, 37, 66);
+
+}
+
+.swiper-pagination-bullet-active {
+    background: green;
+}
+
+.sub-heading {
+    text-align: center;
+    color: green;
+    font-size: 28px;
+    padding-top: 5rem;
+}
+
+.heading {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.dishes .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    gap: 1.6rem;
+
+}
+
+/* .dishes .box-containe .box{
+    padding: 2.5rem;
+    background: white;
+    border-radius: .5rem;
+    border: .1rem   solid black;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+} */
+
+.dishes .box-container .box {
+    padding: 2.5rem;
+    background: white;
+    border-radius: 10px;
+    border: .1rem solid white;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dishes .box-container .box .fa-heart {
+    position: absolute;
+    top: 1.5rem;
+    background: white;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 54px;
+    font-size: 3rem;
+    right: 1.5rem;
+    font: size 2rem;
+    color:  rgb(1, 37, 66);;
+}
+
+.dishes .box-container .box .fa-heart:hover {
+    color: white;
+    background: green;
+    cursor: pointer;
+}
+
+.price {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+    margin-right: 1rem;
+
+    /* margin-inline-start: 14px; */
+}
+
+.dishes .box-container .box img {
+    height: 17rem;
+    width: 1rem 0;
+    border-radius: 12px;
+
+}
+
+.dishes .box-container .box h3 {
+    font-size: 24px;
+    color: black;
+}
+
+.dishes .box-container .box .stars {
+    padding: 14px;
+    font-size: medium;
+    color: green;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+    margin-left: 24px;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    color: rgb(0, 19, 77);
+    font-size: 30px;
+    padding: 10px;
+    line-height: 2;
+
+}
+
+.about .row .content p {
+    color: black(0, 19, 77);
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.about .row .content .icons-contaier {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-contaier .icons {
+    background: lightgrey;
+    border-radius: 7px;
+    border: 0.1rem rgb(0, 19, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+
+}
+
+.about .row .content .icons-contaier .icons i {
+    font-size: 21px;
+    color: green;
+}
+
+.about .row .content .icons-contaier .icons span {
+    font-size: 16px;
+    color: black;
+    font-weight: 800;
+}
+
+.kk {
+
+    margin-inline-start: 62px;
+}
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    gap: 1.4rem;
+}
+
+.menu .box-container .box{
+    background: white;
+    border: 0.1rem rgb(0, 19, 77);
+    border-radius: 1px;
+    box-shadow: var(--box-shadow);
+    margin-inline-start: 10px;
+}
+
+
+.menu .box-container .box .image{
+    height: 279px;
+    width: 100%;
+    padding: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 11px;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    height: 47px;
+    width: 49px;
+    line-height: 5rem;
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 44px;
+    color:  rgb(1, 37, 66);;
+  
+
+}
+.menu .box-container .box .image .fa-heart:hover{
+    background: green;
+    cursor: pointer;
+    color: white;
+}
+
+.menu .box-container .box .content{
+padding: 14px;
+padding-top: 0%;
+}
+
+.menu .box-container .box .content .starts{
+    padding: 10px;
+    
+    }
+.menu .box-container .box .content .starts i{
+    font-size: 21px;
+    color: green;
+    }
+    .menu .box-container .box .content h3 {
+        font-size: 17px;
+        /* text-align: center; */
+        font-weight: bolder
+    }
+    .menu .box-container .box .content p {
+        font-size: 15px;
+    font-weight: 600; 
+    line-height: 14px;
+    }
+    .menu .box-container .box .content a {
+        margin-block-start: 14px;
+        margin-left: 138px;
+    }
+    .menu .box-container .box .content span{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 55px;
+    padding-top: 30px;
+    color: green;
+    }
+.review .slide{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 1px solid  rgb(0, 19, 77); 
+    border-radius: .5rem;
+    position: relative;
+
+}
+.review .slide .fa-quote-right{
+position: absolute;
+top: 2rem;
+right: 2rem;
+font-size: 6rem;
+color: grey;
+
+}
+.review .slide .user {
+display: flex;
+gap:1.5rem ;
+align-items: center;
+padding-bottom: 1.5rem;
+
+}
+.review .slide .user img{
+    height:7rem;
+    width: 7rem;
+    border-radius:50% ;
+    object-fit: cover;
+}
+.review .slide .user h3{
+    color: black;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.review .slide .user i{
+    font-size: 15px;
+    color: green;
+}
+
+.p2 {
+    font-size: 25px;
+    line-height: 1.8;
+    color: grey;
+    font-weight: 500;
+}
+.contact .box-container{
+    display: grid;
+    margin-left: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    gap: 1.4rem;
+}
+.contact .box-container .box h3{
+    padding :.5rem 0;
+    font-size: 30px;
+    color:  rgb(1, 37, 66);
+
+}
+
+.contact .box-container .box a {
+ display: block;
+ padding :.5rem 0;
+ font-size: x-large;
+ color:grey;
+
+
+}
+
+.contact .box-container .box a:hover{
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.contact .credit{
+    text-align: center;
+    border-top: .1rem  solid rgb(1, 37, 66);
+    font-size: 20px;
+    padding: 14px;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icons #bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: .1rem solid black;
+        border-bottom: .1rem solid black;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background-color: white;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .home .home-slider .slide .content h3 {
+        font-size: 5rem;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 50%;
+    }
+
+    .dishes .box-container .box img {
+        height: auto;
+        width: 100%;
+
+
+    }
+}
